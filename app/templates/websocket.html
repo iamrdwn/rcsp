@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/static/js/websocket.js"></script>
+</head>
+<body>
+    <h1>WebSocket Example</h1>
+    <button onclick="sendMessage(wsHandler, 'Hello from client!')">Send Message</button>
+    <ul id="messages"></ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            wsHandler = initializeWebSocket("ws://localhost:8000/ws", 'messages');
+        });
+    </script>
+</body>
+</html>

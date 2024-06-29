@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Donation Details</h2>
+    <p>Amount: {{ donation.amount }}</p>
+    <p>Date: {{ donation.date }}</p>
+    <p>Donor: <a href="/donors/{{ donation.donor.id }}">{{ donation.donor.name }}</a></p>
+    <a href="/donations">Back to Donations List</a>
+{% endblock %}

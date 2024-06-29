@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ child.name }}</h2>
+    <p>Age: {{ child.age }}</p>
+    <p>Gender: {{ child.gender }}</p>
+    <p>School: {{ child.school }}</p>
+    <p>Address: {{ child.address }}</p>
+    <a href="/children">Back to Children List</a>
+{% endblock %}

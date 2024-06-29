@@ -50,7 +50,8 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
-
+node_modules
+.idea/
 # Translations
 *.mo
 *.pot
@@ -60,6 +61,8 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+*.db
+
 
 # Flask stuff:
 instance/

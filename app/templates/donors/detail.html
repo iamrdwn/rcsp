@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ donor.name }}</h2>
+    <p>Email: {{ donor.email }}</p>
+    <p>Phone: {{ donor.phone }}</p>
+    <p>Address: {{ donor.address }}</p>
+    <a href="/donors">Back to Donors List</a>
+{% endblock %}
